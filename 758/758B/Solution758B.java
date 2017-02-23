@@ -21,8 +21,8 @@ public class Solution758B{
 		hs.add('Y');
 		hs.add('G');
 
-		for(int i = 0; i < s.length(); ++i){
-			if(hs.size() > 0 && s.charAt(i) != '!'){
+		for(int i = 0; hs.size() > 0 && i < s.length(); ++i){
+			if(s.charAt(i) != '!'){
 				chars[i % 4] = s.charAt(i);
 				hs.remove(s.charAt(i));
 			} 
